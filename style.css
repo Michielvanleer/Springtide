@@ -11,9 +11,18 @@
   - FORMS
 
 ---------------------------*/
-Website Fonts: List fonts here for reference
-Website Colours: List colour hex codes here for reference
+Website Fonts:
+Headers: font-family:'Hind', sans-serif;
+Text: font-family: 'Open Sans', sans-serif;
 
+Website Colours: List colour hex codes here for reference
+Font color in light areas:rgb(72,61,139); darkblue
+Font color in H3, H4: rgb(249, 249, 249); white
+Font color in P color: rgb(43, 43, 43);black
+Background color highlight : rgb 255,140,0) dark orange
+Background color light area rgb (0,206,209); dark turqoise.
+
+/*------CSS RESET------------*/
 *{
   box-sizing:border-box;
   img max-width: 100%;
@@ -21,19 +30,48 @@ Website Colours: List colour hex codes here for reference
   padding:0;
   border: 1px solid black;
 }
+img {
+  max-width: 100%;
+  height: auto;
+
 
 /*-----GENERAL HELPER CLASSES---*/
+
+.tall         { min-height:100vh; }
+.med-height   { min-height: 50vh; }
+.short        { min-height: 30vh; }
+
+.left         { text-align: left; }
+.centered     { text-align: center; }
+.right        { text-align: right; }
+
+.no-padding { padding: 0; }
+
+.light-bg    { background-color: rgb(0,206,209); }
+.dark-bg     { background-color: rgb(72,61,139); }
+.feat-bg     { background-color: rgb(255,140,0; }
 
 
 
 
 /*-------UNIVERSAL ELEMENTS---*/
-- Layout
-- Typography
-- General Styles
+body{
+  
+}
+
+header{
+
+
+}
+
+Footer{
+
+}
 
 
 /*------HEADER AND FOOTER---*/
+
+
 
 
 
