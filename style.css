@@ -1,3 +1,19 @@
+/* ------ INDEX --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+    - Layout
+    - Typography
+    - General Styles
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+
+---------------------------*/
+Website Fonts: List fonts here for reference
+Website Colours: List colour hex codes here for reference
+
 *{
   box-sizing:border-box;
   img max-width: 100%;
@@ -5,3 +21,36 @@
   padding:0;
   border: 1px solid black;
 }
+
+/*-----GENERAL HELPER CLASSES---*/
+
+
+
+
+/*-------UNIVERSAL ELEMENTS---*/
+- Layout
+- Typography
+- General Styles
+
+
+/*------HEADER AND FOOTER---*/
+
+
+
+/*-----MODULAR ELEMENTS---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Homepage styles
