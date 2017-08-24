@@ -1,5 +1,4 @@
 /* ------ INDEX --------------------
-  - CSS RESET
   - GENERAL HELPER CLASSES
   - UNIVERSAL STYLES
     - Layout
@@ -10,33 +9,17 @@
     - Element Name
   - FORMS
 
----------------------------*/
-Website Fonts:
 Headers: font-family:'Hind', sans-serif;
 Text: font-family: 'Open Sans', sans-serif;
 
-Website Colours: List colour hex codes here for reference
+Website Colours:
 Font color in light areas:rgb(72,61,139); darkblue
 Font color in H3, H4: rgb(249, 249, 249); white
 Font color in P color: rgb(43, 43, 43);black
 Background color highlight : rgb 255,140,0) dark orange
 Background color light area rgb (0,206,209); dark turqoise.
 
-/*------CSS RESET------------*/
-*{
-  box-sizing:border-box;
-  img max-width: 100%;
-  margin:0;
-  padding:0;
-  border: 1px solid black;
-}
-img {
-  max-width: 100%;
-  height: auto;
-
-
-/*-----GENERAL HELPER CLASSES---*/
-
+/* ---- GENERAL HELPER CLASSES --------------------------- */
 .tall         { min-height:100vh; }
 .med-height   { min-height: 50vh; }
 .short        { min-height: 30vh; }
@@ -47,48 +30,95 @@ img {
 
 .no-padding { padding: 0; }
 
-.light-bg    { background-color: rgb(0,206,209); }
-.dark-bg     { background-color: rgb(72,61,139); }
-.feat-bg     { background-color: rgb(255,140,0; }
-
-
+.light-bg    { background-color: rgb(245,245,245); }
+.dark-bg     { background-color: rgb(60,60,60); }
+.feat-bg     { background-color: green ; }
 
 
 /*-------UNIVERSAL ELEMENTS---*/
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  border:1px solid black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body{
-  
+Background-color:rgb(249,249,249);
+border: 1px solid black;
+font-family: 'Open Sans', sans-serif;
+font-size:12px;
 }
-
-header{
-
-
-}
-
-Footer{
-
-}
-
-
-/*------HEADER AND FOOTER---*/
-
-
-
-
 
 /*-----MODULAR ELEMENTS---*/
 
+header{
+  Background-color: rgb(0,206,209);
+
+}
+
+header nav {
+text-align:center;
+}
+
+header nav a{
+font-size: 12px;
+margin: 5px 5px;
+letter-spacing: 2.5px;
+}
+
+.navigation a:hover{
+border-top-color:rgb(255,140,0);
+}
+
+
+}
+
+.headers h1{
+  padding:30% 10%;
+  letter-spacing:2.5px;
+
+}
+
+
+footer{
+  Background-color: rgb(0,206,209);
+}
 
 
 
+h1, h2, h3,h4,h5,h6{
+color:
+font-family:
+}
 
+p{
 
+}
 
+a{
 
-
-
-
-
-
-
-
-/*Homepage styles
+}
+section,footer{
+padding:2% 10%;
+}
+.button{
+border:1px rgb(255,140,0);
+color:(255,140,0);
+}
+.header-txt{
+  Font-size:30px;
+  border:1px rgb(255,140,0);
+  color:rgb(255,140,0);
+  text-align:center;
+  padding:30% 10%;
+  letter-spacing:2.5px;
+  background-image:url(Images/header-image.jpg);
+  min-height:100vh;
+}
+/*-------Homepage styles-----*/
+.aboutme
