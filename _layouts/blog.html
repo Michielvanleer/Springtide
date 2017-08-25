@@ -1,15 +1,37 @@
 ---
 layout: default
 ---
+<section class="grid banner">
+    <img src="{{ page.background-image }}"/>
+  <div class="col-12 header">
+    <div class="col-8">
+      <h1 class="col-12">{{ page.title }}</h1>
+      <h2 class="col-12">{{ page.subtitle }}</h2>
+      <p class="col-12">{{ page.reading-time }} </p>
+      <p class="col-12">{{ page.date }} - {{page.location}} </p>
+      <p class="col-12">{{ page.sector }}</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class=" grid col-12">
+    <div class="col-8">
+      <div class="col-12.introblurb">{{ page.quote }}</div>
+      <div class="col-12.light-bg">{{ page.challenge }}</div>
+      <div class="col-12.light-bg">{{featured-image}}</div>
+      <div class="col-12.dark-bg">{{ page.conclusion }}</div>
+    </div>
+  </div>
+</section>
+
+
+{{content}}
+
+
 
 <section>
-<h1>Recent Post</h1>
-
-{% for posts in site.posts %}
-
-
-
-{% endfor %}
-
-
+<div class="col-4">
+  <div class="col-12.dark-bg">{{  }}</div><!--include scrolling menu-->
+  <h1 class="col-12.dark-bg">{{ page.keystats }}</h1>
+</div>
 </section>

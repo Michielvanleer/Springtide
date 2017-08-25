@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% for blog in site.posts %}
+
+<a href="{{ blog.url }}">{{ blog.title }} - {{blog.subtitle}} - {{blog.quote}}
+  {{ blog.date }} - {{blog.sector}} - {{blog-featured-image}}
+</a>
+
+{% endfor %}
