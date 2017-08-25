@@ -1,0 +1,9 @@
+collections:
+  projects:
+    output: true
+  testimonials:
+    output: false
+  sectors:
+    output: true
+  my contributions:
+    output: false
