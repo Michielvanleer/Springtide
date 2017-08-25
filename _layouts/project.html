@@ -7,24 +7,27 @@ layout: default
     <div class="col-4"/>
       <img src="{{ page.image}}"/>
     </div>
-    <div class="col-8"
-      <h1>{{ page.client }}</h1>
-      <h2>{{ page.subtitle }}</h2>
-      <p>{{ page.date }} - {{page.location }}</p>
-      <p>{{ page.sector }}</p>
+    <div class="col-8">
+      <h1 class="col-12">{{ page.client }}</h1>
+      <h2 class="col-12">{{ page.subtitle }}</h2>
+      <p class="col-12">{{ page.date }} - {{page.location }}</p>
+      <p class="col-12">{{ page.sector }}</p>
     </div>
-
-    </div>
-</section>
-
-  <div class=col-6>
- <h1 class="col-12">{{ page.title }} </h1>
-  <p class="col-12">{{ page.subtitle }} </p>
-  <p class="col-12">{{ page.company }} </p>
-  <p class="col-12">{{ page.sector }} </p>
   </div>
-
-  <div class=col-6>
+</section>
+<section>
+  <div class=" grid col-12">
+    <div class="col-8">
+      <div class="col-12.introblurb">{{ page.quote }}</div>
+      <div class="col-12.light-bg">{{ page.challenge }}</div>
+      <div class="col-12.dark-bg">{{ page.my-solution }}</div>
+      <div class="col-12.light-bg">{{ page.the-result }}</div>
+    </div>
+    <div class="col-4">
+      <div class="col-12.dark-bg">{{ page.testimonial }}</div>
+      <div class="col-12.dark-bg">{{ page.keystats }}</div>
+    </div>
+  </div>
 </section>
 
 
