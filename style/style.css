@@ -30,9 +30,29 @@ Background color light area rgb (0,206,209); dark turqoise.
 
 .no-padding { padding: 0; }
 
-.light-bg    { background-color: rgb(245,245,245); }
-.dark-bg     { background-color: rgb(60,60,60); }
-.feat-bg     { background-color: green ; }
+.intro-blurb {
+  background-color: rgb(249, 249, 249);
+  color: black;
+}
+
+.light-bg    {
+  background-color rgb(245,245,245);
+  color:  rgb(72,61,139);
+}
+
+.dark-bg     {
+  background-color: rgb(72,61,139);
+  color: white;
+}
+.feat-bg     {
+  background-color: rgb(0,206,209);
+  color: white;
+  font-weight: 700;
+}
+
+.feat-bg p a {
+  color: rgb(255,140,0);
+}
 
 
 /*-------UNIVERSAL ELEMENTS---*/
@@ -40,7 +60,7 @@ Background color light area rgb (0,206,209); dark turqoise.
   box-sizing:border-box;
   margin:0;
   padding:1px;
-  border:1px solid black;
+  /*-- border:1px solid black; --*/
 }
 
 
@@ -56,7 +76,7 @@ img {
 body{
 Background-color:rgb(249,249,249);
 font-family: 'Open Sans', sans-serif;
-font-size:18px;
+font-size:22px;
 }
 
 /*-----MODULAR ELEMENTS---*/
@@ -83,7 +103,7 @@ display: inline-block;
 
 
 section{
-  padding:5% 10%;
+  padding:2.5% 10%;
 }
 
 .navigation a:hover{
@@ -105,7 +125,6 @@ h1, h2{
   font-family:'Hind', sans-serif;
   color: black;
   text-align: center;
-  background-color: rgb(249,249,249);
   margin:2% 0%;
 }
 
@@ -113,12 +132,11 @@ h3, h4{
   font-family: 'Hind', sans-serif;
   color: rgb(72,61,139);
   text-align: center;
-  background-color: rgb(249,249,249);
   margin:1% 0%;
 }
 
 p{
-  line-height: 1.7;
+  line-height: 1.85;
 }
 
 a{
@@ -134,8 +152,24 @@ a:hover {
 border-top-color:rgb(255,140,0);
 }
 
+.btn {
+  display: inline-block;
+  padding: 1.0rem;
+}
+
+.btn-dark {
+  background-color: rgb(255, 140, 0);
+  border: 1px solid white;
+  color: white;
+}
+
 span{
-  
+
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
 }
 
 .testimonials{
@@ -161,12 +195,13 @@ color:rgb(249,249,249);
   padding:30% 10%;
   letter-spacing:2.5px;
   background-color: rgb(249,249,249,0.30);
-  background-image:url(Images/header-image.jpg);
+  background-image:url(/Images/header-image.jpg);
   min-height:100vh;
 }
 
 .featured{
   background-color: rgb(0,206,209);
+  color: white;
 }
 
 /*-------Homepage styles-----*/

@@ -1,37 +1,49 @@
 ---
 layout: default
 ---
-<section class="grid banner">
-    <img src="{{ page.background-image }}"/>
+<section class="grid banner" style="background-image:url(/images/{{ page.background-image }})">
   <div class="col-12 header">
-    <div class="col-8">
-      <h1 class="col-12">{{ page.title }}</h1>
-      <h2 class="col-12">{{ page.subtitle }}</h2>
-      <p class="col-12">{{ page.reading-time }} </p>
-      <p class="col-12">{{ page.date }} - {{page.location}} </p>
-      <p class="col-12">{{ page.sector }}</p>
-    </div>
+    <h1 class="col-12">{{ page.title }}</h1>
+    <h2 class="col-12">{{ page.subtitle }}</h2>
+    <p class="col-12">Reading time: {{ page.reading-time }}</p>
+    <p class="col-12">Date: {{ page.date | date_to_long_string }}</p>
+    <p class="col-12">location: {{ page.location }}</p>
+    <p class="col-12">Sector: {{ page.sector }}</p>
   </div>
 </section>
-<section>
-  <div class=" grid col-12">
-    <div class="col-8">
-      <div class="col-12.introblurb">{{ page.quote }}</div>
-      <div class="col-12.light-bg">{{ page.challenge }}</div>
-      <div class="col-12.light-bg">{{featured-image}}</div>
-      <div class="col-12.dark-bg">{{ page.conclusion }}</div>
-    </div>
+<div class="grid">
+  <div class="col-9">
+    <section class="feat-bg">
+      <h2 class="">Introduction</h2>
+      <p class="col-12 introblurb">{{ page.quote }}</p>
+    </section>
+    <section class="light-bg">
+      <h2 class="">Challenge</h2>
+      <p>
+        {{ page.challenge }}
+      </p>
+    </section>
+    <section class="">
+      <h2 class="">the case</h2>
+      <p>
+        {{content}}
+      </p>
+    </section>
+    <section class="dark-bg">
+      <div class="">{{featured-image}}</div>
+      <h2 class="">Conclusion</h2>
+      <p>
+        {{ page.conclusion }}
+      </p>
+    </section>
   </div>
-</section>
-
-
-{{content}}
-
-
-
-<section>
-<div class="col-4">
-  <div class="col-12.dark-bg">{{  }}</div><!--include scrolling menu-->
-  <h1 class="col-12.dark-bg">{{ page.keystats }}</h1>
+  <aside class="col-3 dark-bg">
+    <h1 class="">Bloop{{ page.keystats }}</h1>
+    <nav class=""><!--include scrolling menu-->
+      <a href="#introduction">Introduction</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#the-case">The case</a>
+      <a href="#Conclusion">Conclusion</a>
+    </nav>
+  </aside>
 </div>
-</section>

@@ -1,23 +1,27 @@
-
+---
+layout: default
+---
 <section class="header-txt">
   <P>Springtide.com</p>
   <p>The partner in reducing your environmental footprint</p>
 </section>
-<section id="about-me" class="aboutme">
+<section id="about-me" class="aboutme feat-bg">
   <h2>About me</h2>
-  <div class="grid-centre col-12 featured">
+  <div class="grid-centre col-12">
     <div class="col-5 Springtide">
       <h3>About Springtide</h3>
-      <p>Springtide is your partner for all environmental matters with the purpose to reduce your environmental footprint.Read more <a href="about me">about springtide</a>
+      <p>Springtide is your partner for all environmental matters with the purpose to reduce your environmental footprint.Read more
       </p>
+      <a class="btn btn-dark" href="about me">about springtide</a>
     </div>
   <nav class="col-2-bottom button">
-    <a href>Contact me</a>
+    <a class="btn btn-dark" href>Contact me</a>
   </nav>
   <div class="col-5 abouttxt">
     <h3>About me</h3>
-    <p>Hi, My name is Michiel van Leer and I am springtide. In 2017 I founded this business during my sabbatical, to be able share my experience and knowlegde with yourself, but also to generate income to kickstart the projects which you find in the <a href="my contribution">my contribution</a> section on this site. I worked for 8 years in the shipping, offhore and Oil and Gas sector as Environmental manager and found that, also seen the speed of Climate change I should extend my work field and contribute more extensively. Money is not my incentive, slowing down Climate change is. Read more <a href="about me">about me</a>
+    <p>Hi, My name is Michiel van Leer and I am springtide. In 2017 I founded this business during my sabbatical, to be able share my experience and knowlegde with yourself, but also to generate income to kickstart the projects which you find in the <a href="my contribution">my contribution</a> section on this site. I worked for 8 years in the shipping, offhore and Oil and Gas sector as Environmental manager and found that, also seen the speed of Climate change I should extend my work field and contribute more extensively. Money is not my incentive, slowing down Climate change is.
     </p>
+    <a class="btn btn-dark" href="about me">about me</a>
   </div>
 </div>
 </section>
@@ -92,15 +96,16 @@
       <div class="col-4 description">
         <div class="col-4 description">
           {% for project in site.projects %}
-          <h3> {{ project.company }} </h3>
-          <p>
-          {{ project.subtitle }}
-          </p>
-        </div>
-        <div class="col-4 project-txt">
-          <div class="col-4 brand-image">
-            {{ project.image }}
+            <h3> {{ project.company }} </h3>
+            <p>
+            {{ project.subtitle }}
+            </p>
           </div>
+          <div class="col-4 project-txt">
+            <div class="col-4 brand-image">
+              {{ project.image }}
+            </div>
+          {% endfor %}
       </div>
     </div>
     <div class="col-4 project-txt">
