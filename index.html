@@ -91,14 +91,15 @@
   <div class="grid col-12 project-overview">
       <div class="col-4 description">
         <div class="col-4 description">
-          <h3>Shell Singapore</h3>
+          {% for project in site.projects %}
+          <h3> {{ project.company }} </h3>
           <p>
-          Development and implementation of environmental management system for Shell Prelude project
+          {{ project.subtitle }}
           </p>
         </div>
         <div class="col-4 project-txt">
           <div class="col-4 brand-image">
-            <img src="" alt="">
+            {{ project.image }}
           </div>
       </div>
     </div>
