@@ -51,6 +51,7 @@ Background color light area rgb (0,206,209); dark turqoise.
   font-weight: 700;
 }
 
+
 .quote-bg     {
   background-color: rgb(0,206,209);/*dark turqoise*/
   color: white;
@@ -74,8 +75,6 @@ Background color light area rgb (0,206,209); dark turqoise.
 background-color: rgb(255,140,0);/*dark orange */
   color: white;
 }
-
-
 .footer-bg{
   background-color: rgb(72,61,139);/*dark blue*/
 }
@@ -172,7 +171,7 @@ p{
   line-height: 1.85;
 }
 
-a{
+p a{
   font-weight: bold;
   padding: 0% 0%;
   border:2px rgb(255,140,0);
@@ -291,3 +290,10 @@ color:rgb(249,249,249);
 .featured-image{
   border: 1px rgb(72,61,139)
 }
+
+.overview p a {
+ border:1px rgb(72,61,139);
+ color:black;
+ background-color: rgb(245,245,245);
+ text-decoration: none;
+ }
