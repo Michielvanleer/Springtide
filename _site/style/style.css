@@ -31,29 +31,59 @@ Background color light area rgb (0,206,209); dark turqoise.
 .no-padding { padding: 0; }
 
 .intro-blurb {
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(249, 249, 249); /*white*/
   color: black;
 }
 
 .light-bg    {
-  background-color rgb(245,245,245);
-  color:  rgb(72,61,139);
+  background-color: rgb(112,128,144);/*grey*/
+  color: rgb(255,140,0) ;
+  font-weight: bold;
 }
 
 .dark-bg     {
-  background-color: rgb(72,61,139);
+  background-color: rgb(72,61,139); /*dark-blue*/
   color: white;
 }
 .feat-bg     {
-  background-color: rgb(0,206,209);
+  background-color: rgb(0,206,209);/*dark turqoise*/
   color: white;
   font-weight: 700;
 }
 
-.feat-bg p a {
-  color: rgb(255,140,0);
+.quote-bg     {
+  background-color: rgb(0,206,209);/*dark turqoise*/
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 2% 5% 1% 2%;
+  margin: 0% 0% 7% 0%;
 }
 
+.sidebar-bg {
+  background-color: rgb(112,128,144);/*grey*/
+  color: rgb(255,140,0);
+  font-weight: bold;
+  padding: 5% 10%;
+}
+
+.feat-bg p a {
+  color: rgb(255,140,0);/*dark orange */
+}
+.contrast-bg{
+background-color: rgb(255,140,0);/*dark orange */
+  color: white;
+}
+
+
+.footer-bg{
+  background-color: rgb(72,61,139);/*dark blue*/
+}
+.banner-bg{
+  background-color: rgb(0,206,209,1.0);
+  color: white;
+  font-weight:bold;
+}
 
 /*-------UNIVERSAL ELEMENTS---*/
 *{
@@ -111,13 +141,16 @@ border-top-color:rgb(255,140,0);
 }
 
 footer{
-  Background-color: rgb(0,206,209);
   padding:5% 0%;
   width:100%;
 }
 
 footer h2{
 background-color: rgb(249,249,249);
+}
+
+footer nav a{
+  padding:5% 0% 0% 5%;
 }
 
 
@@ -173,8 +206,6 @@ span{
 }
 
 .testimonials{
-  Background-color: rgb(72,61,139);
-  color:rgb(249,249,249);
   font-size:25px;
 }
 
@@ -188,14 +219,17 @@ color:rgb(249,249,249);
 }
 
 .header-txt{
-  Font-size:30px;
+  Font-size:40px;
+  font-weight:bold;
   border:1px rgb(255,140,0);
-  color: #2aecef;
-  text-align:center;
-  padding:30% 10%;
+  color: rgb(255,140,0);
+  text-align:bottom;
+  padding:5% 0%;
   letter-spacing:2.5px;
   background-color: rgb(249,249,249,0.30);
-  background-image:url(/Images/header-image.jpg);
+  background-image:url(/Images/peer.jpg);
+  background-position: center;
+  background-size: cover;
   min-height:100vh;
 }
 
@@ -205,10 +239,6 @@ color:rgb(249,249,249);
 }
 
 /*-------Homepage styles-----*/
-
-
-
-
 
 # awareness
 
@@ -238,12 +268,22 @@ color:rgb(249,249,249);
 
 .col-6 .description{
     padding:7% 15%;
+
+.form{
+  padding: 5% 15% 2% 2%;
+}
+
+
+/*---blog.html---*/
+
+.sidebar-bg h2{
+  padding-top: 7%;
+  padding-right: 20%;
 }
 
 
 
-#services:
-
-
-
+.quote{
+  font-size:30px;
+  padding: 5% 5%;
 }

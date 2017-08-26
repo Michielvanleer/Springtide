@@ -3,33 +3,38 @@ layout: default
 ---
 <section class="grid banner" style="background-image:url(/images/{{ page.background-image }})">
   <div class="col-12 header">
-    <h1 class="col-12">{{ page.title }}</h1>
-    <h2 class="col-12">{{ page.subtitle }}</h2>
-    <p class="col-12">Reading time: {{ page.reading-time }}</p>
-    <p class="col-12">Date: {{ page.date | date_to_long_string }}</p>
-    <p class="col-12">location: {{ page.location }}</p>
-    <p class="col-12">Sector: {{ page.sector }}</p>
+    <h1 class="col-12 ">{{ page.title }}</h1>
+    <h2 class="col-12 ">{{ page.subtitle }}</h2>
+  </div>
+  <div class="col-12 banner-bg">
+    <p class="col-12"><i class="fa fa-clock-o" aria-hidden="true"></i> Reading time: {{ page.reading-time }}</p>
+    <p class="col-12"><i class="fa fa-calendar" aria-hidden="true"></i> Date: {{ page.date | date_to_long_string }}</p>
+    <p class="col-12"><i class="fa fa-map-marker" aria-hidden="true"></i> Location: {{ page.location }}</p>
+    <p class="col-12"><i class="fa fa-industry" aria-hidden="true"></i> Sector: {{ page.sector }}</p>
   </div>
 </section>
 <div class="grid">
   <div class="col-9">
-    <section class="feat-bg">
+    <section class="contrast-bg">
       <h2 class="">Introduction</h2>
-      <p class="col-12 introblurb">{{ page.quote }}</p>
+      <p class="col-12 intro-blur ">{{ page.quote }}</p>
     </section>
-    <section class="light-bg">
+    <section class="intro-blurb">
       <h2 class="">Challenge</h2>
       <p>
         {{ page.challenge }}
       </p>
     </section>
     <section class="">
-      <h2 class="">the case</h2>
+      <p class="quote-bg"/>
+      {{ page.quote }}
+      </p>
+      <h2 class="">The Case</h2>
       <p>
         {{content}}
       </p>
     </section>
-    <section class="dark-bg">
+    <section class="contrast-bg">
       <div class="">{{featured-image}}</div>
       <h2 class="">Conclusion</h2>
       <p>
@@ -37,13 +42,20 @@ layout: default
       </p>
     </section>
   </div>
-  <aside class="col-3 dark-bg">
-    <h1 class="">Bloop{{ page.keystats }}</h1>
-    <nav class=""><!--include scrolling menu-->
+  <aside class="col-3 sidebar-bg">
+      <h2>Menu</h2>
+    <nav class=" col-8 sidebar-bg navigation"><!--include scrolling menu-->
       <a href="#introduction">Introduction</a>
       <a href="#challenge">Challenge</a>
       <a href="#the-case">The case</a>
       <a href="#Conclusion">Conclusion</a>
     </nav>
+    <div class="col-8 sidebar-bg keystats">
+      <h2 class="">Keystats</h2>
+      <ul>
+        {% for blog in site.posts %}
+          <li> {{ page.keystats }} </li>
+          {% endfor %}
+      </ul>
+    </div>
   </aside>
-</div>

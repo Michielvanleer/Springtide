@@ -1,34 +1,61 @@
 ---
 layout: default
 ---
-<section class="grid banner">
-    <img src="{{ page.background-image }}"/>
+<section class="grid banner" style="background-image:url(/images/{{ page.background-image }})">
   <div class="col-12 header">
-    <div class="col-4"/>
-      <img src="{{ page.image }}"/>
-    </div>
-    <div class="col-8">
-      <h1 class="col-12">{{ page.client }}</h1>
-      <h2 class="col-12">{{ page.subtitle }}</h2>
-      <p class="col-12">{{ page.date }} - {{page.location }}</p>
-      <p class="col-12">{{ page.sector }}</p>
-    </div>
+    <h1 class="col-12 ">{{ page.title }}</h1>
+    <h2 class="col-12 ">{{ page.subtitle }}</h2>
+  </div>
+  <div class="col-12 banner-bg">
+    <p class= "col-12"><img src="/images/{{ page.image }}" /></p>
+    <p class ="col-12"><i class="fa fa-suitcase" aria-hidden="true"></i>  Client: {{ page.client }}</p>
+    <p class="col-12"><i class="fa fa-calendar" aria-hidden="true"></i> Date: {{ page.date | date_to_long_string }}</p>
+    <p class="col-12"><i class="fa fa-map-marker" aria-hidden="true"></i> Location: {{ page.location }}</p>
+    <p class="col-12"><i class="fa fa-industry" aria-hidden="true"></i> Sector: {{ page.sector }}</p>
   </div>
 </section>
-<section>
-  <div class=" grid col-12">
-    <div class="col-8">
-      <div class="col-12.introblurb">{{ page.quote }}</div>
-      <div class="col-12.light-bg">{{ page.challenge }}</div>
-      <div class="col-12.dark-bg">{{ page.my-solution }}</div>
-      <div class="col-12.light-bg">{{ page.the-result }}</div>
-    </div>
-    <div class="col-4">
-      <div class="col-12.dark-bg">{{ page.testimonial }}</div>
-      <div class="col-12.dark-bg">{{ page.keystats }}</div>
-    </div>
+<div class="grid">
+  <div class="col-9">
+    <section class="contrast-bg">
+      <h2 class="">Introduction</h2>
+      <p class="col-12 intro-blur ">{{ page.quote }}</p>
+    </section>
+    <section class="intro-blurb">
+      <h2 class="">Challenge</h2>
+      <p>
+      {{ page.challenge }}
+      </p>
+    </section>
+    <section class="">
+      <p class="quote-bg"/>
+      {{ page.quote }}
+      </p>
+      <h2 class="">My solution</h2>
+      <p>
+      {{ page.my-solution }}
+      </p>
+    </section>
+    <section class="contrast-bg">
+      <h2 class="">The Result</h2>
+      <p>
+        {{ page.the-result }}
+      </p>
+    </section>
   </div>
-</section>
-
-
-{{content}}
+<aside class="col-3">
+  <div class="sidebar-bg">
+    <h2>Testimonial</h2>
+    <p class="col-8"><img src="/images/{{ page.image-client }}"/></p>
+    <p class="col-8"> {{ page.testimonial }} </p>
+    <p class="col-8"> Name: {{ page.person }} </p>
+    <p class="col-8"> Job-title: {{ page.person-title }}</p>
+  </div>
+  <div class="col-8 sidebar-bg keystats">
+    <h2 class="">Keystats</h2>
+    <ul>
+      {% for blog in site.posts %}
+        <li> {{ page.keystats }} </li>
+        {% endfor %}
+    </ul>
+  </div>
+</aside>
