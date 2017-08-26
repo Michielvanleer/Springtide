@@ -1,10 +1,21 @@
 ---
 layout: default
 ---
-{% for blog in site.posts %}
-
-<a href="{{ blog.url }}">{{ blog.title }} - {{blog.subtitle}} - {{blog.quote}}
-  {{ blog.date }} - {{blog.sector}} - {{blog-featured-image}}
-</a>
-
-{% endfor %}
+<section class="grid banner" style="background-image:url(/images/{{ page.background3.jpg}})">
+<h1> Recent publications</h1>
+</section>
+<section "col-8 featured-image">
+  {% for blog in site.posts %}
+  <a href="{{ blog.url }}"="col-8">
+    <div class="col-6"><img src="/images/{{ blog.featured-images }}"</div>
+    <h2 class="col-6"> {{ blog.title }} </h2>
+    <h3 class="col-6"> {{ blog.subtitle }} <h3>
+    <p class="col-6"> {{blog.quote}} </p>
+    <p class="col-6"> {{ blog.sector }} <p>
+    <div>
+  </a>
+  {% endfor %}
+    <nav class="col-2-bottom button">
+      <a class="btn btn-dark" href>click here</a>
+    </nav>
+</section>

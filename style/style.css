@@ -274,16 +274,20 @@ color:rgb(249,249,249);
 }
 
 
-/*---blog.html---*/
+/*---blog.html-layout--*/
 
 .sidebar-bg h2{
   padding-top: 7%;
   padding-right: 20%;
 }
 
-
-
 .quote{
   font-size:30px;
   padding: 5% 5%;
+}
+
+/*---blog.html--*/
+
+.featured-image{
+  border: 1px rgb(72,61,139)
 }
