@@ -15,26 +15,26 @@ layout: default
 </section>
 <div class="grid">
   <div class="col-9">
-    <section class="contrast-bg">
+    <section class="dark-bg" id="introduction">
       <h2 class="">Introduction</h2>
       <p class="col-12 intro-blur ">{{ page.quote }}</p>
     </section>
-    <section class="intro-blurb">
+    <section class="light-bg" id="challenge">
       <h2 class="">Challenge</h2>
       <p>
         {{ page.challenge }}
       </p>
-    </section>
-    <section class="">
-      <p class="quote-bg"/>
+      <p class="quote-bg">
       {{ page.quote }}
       </p>
+    </section>
+    <section class="light-bg" id="the-case">
       <h2 class="">The Case</h2>
       <p>
         {{content}}
       </p>
     </section>
-    <section class="contrast-bg">
+    <section class="feat-bg" id="conclusion">
       <div class="">{{featured-image}}</div>
       <h2 class="">Conclusion</h2>
       <p>
@@ -42,20 +42,21 @@ layout: default
       </p>
     </section>
   </div>
-  <aside class="col-3 sidebar-bg">
-      <h2>Menu</h2>
-    <nav class=" col-8 sidebar-bg navigation"><!--include scrolling menu-->
-      <a href="#introduction">Introduction</a>
-      <a href="#challenge">Challenge</a>
-      <a href="#the-case">The case</a>
-      <a href="#Conclusion">Conclusion</a>
-    </nav>
-    <div class="col-8 sidebar-bg keystats">
+  <aside class="col-3 contrast-bg">
+      <h2>Content</h2>
+    <ol class=" col-8 contrast-bg navigation"><!--include scrolling menu-->
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#the-case">The case</a></li>
+      <li><a href="#Conclusion">Conclusion</a></li>
+    </ol>
+    <div class="col-8 contrast-bg keystats">
       <h2 class="">Keystats</h2>
-      <ul>
-        {% for blog in site.posts %}
-          <li> {{ page.keystats }} </li>
+      <div class="stats">
+        {% for stat in page.keystats %}
+        <p class= "figure"> {{ stat.figure }}</p>
+        <p> {{ stat.measure }}</p>
           {% endfor %}
-      </ul>
+      </div>
     </div>
   </aside>

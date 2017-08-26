@@ -16,11 +16,11 @@ layout: default
 </section>
 <div class="grid">
   <div class="col-9">
-    <section class="contrast-bg">
+    <section class="dark-bg">
       <h2 class="">Introduction</h2>
-      <p class="col-12 intro-blur ">{{ page.quote }}</p>
+      <p class="col-12">{{ page.quote }}</p>
     </section>
-    <section class="intro-blurb">
+    <section class="light-bg">
       <h2 class="">Challenge</h2>
       <p>
       {{ page.challenge }}
@@ -35,7 +35,7 @@ layout: default
       {{ page.my-solution }}
       </p>
     </section>
-    <section class="contrast-bg">
+    <section class="feat-bg">
       <h2 class="">The Result</h2>
       <p>
         {{ page.the-result }}
@@ -43,19 +43,20 @@ layout: default
     </section>
   </div>
 <aside class="col-3">
-  <div class="sidebar-bg">
+  <div class="contrast-bg">
     <h2>Testimonial</h2>
     <p class="col-8"><img src="/images/{{ page.image-client }}"/></p>
     <p class="col-8"> {{ page.testimonial }} </p>
     <p class="col-8"> Name: {{ page.person }} </p>
     <p class="col-8"> Job-title: {{ page.person-title }}</p>
   </div>
-  <div class="col-8 sidebar-bg keystats">
+  <div class="col-8 contrast-bg keystats">
     <h2 class="">Keystats</h2>
-    <ul>
-      {% for blog in site.posts %}
-        <li> {{ page.keystats }} </li>
+    <div class="stats">
+      {% for stat in page.keystats %}
+      <p class= "figure"> {{ stat.figure }}</p>
+      <p> {{ stat.measure }}</p>
         {% endfor %}
-    </ul>
+    </div>
   </div>
 </aside>
