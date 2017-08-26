@@ -1,22 +1,37 @@
 ---
 layout: default
 ---
-<section class="banner" style="background-image (/Images/background3.jpg)">
+<section class="grid banner" style="background-image:url('/images/background3.jpg')">
+  <div class="banner-overlay">
+    <h1>Recent publications</h1>
+  </div>
 </section>
-<h1> Recent publications</h1>
-<section class="grid-middle">
+<section class="grid-center">
   <div class="col-9">
   {% for blog in site.posts %}
     <a href="{{ blog.url }}">
-      <h3 class="col-6 feat-bg">Title: {{ blog.title }} </h3>
-      <h4 class="col-6 feat-bg"> {{ blog.subtitle }} </h4>
-      <p class="col-6 feat-bg"> {{blog.quote}} </p>
-      <p class="col-6 feat-bg"> Sector: {{ blog.sector }} <p>
+      <h2 class="col-6">{{ blog.title }} </h2>
+      <h3 class="col-6">{{ blog.subtitle }} </h3>
+      <p class="col-6"> {{blog.quote}} </p>
+      <p class="col-6">{{ blog.sector }} <p>
+    <div class="grid col-12 meta-data">
+      <p class="col-3">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+      {{ blog.reading-time }}
+      </p>
+      <p class="col-3">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        {{ blog.date | date_to_long_string }}
+      </p>
+      <p class="col-2">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        {{ blog.location }}
+      </p>
+      <p class="col-4">
+      <i class="fa fa-industry" aria-hidden="true"></i>
+      {{ blog.sector }}
+    </div>
     </a>
   {% endfor %}
 </div>
- <aside class="col-3 sidebar-bg">
-
-
- </aside>
 </section>

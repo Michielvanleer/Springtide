@@ -101,6 +101,13 @@ color: white;
   font-weight: bold;
 }
 
+.banner-overlay p{
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .banner {
   background-position: center;
   background-size: cover;
@@ -112,6 +119,7 @@ color: white;
   text-align: center;
   padding: 5% 0%;
 }
+
 
 /*-------UNIVERSAL ELEMENTS---*/
 *{
@@ -354,4 +362,8 @@ color:rgb(249,249,249);
 .figure{
    font-size: 60px;
    line-height: 1;
- }
+}
+
+.blog-header{
+  text-align: center;
+}
