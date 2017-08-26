@@ -49,15 +49,13 @@ Background color light area rgb (0,206,209); dark turqoise.
   color: white;
 }
 
-
-
 .quote-bg     {
   background-color: rgb(0,206,209);/*dark turqoise*/
   color: white;
   font-weight: 700;
   font-size: 30px;
   padding: 2% 5% 1% 2%;
-  margin: 5% 0% 7% 0%;
+  margin: 7% 0% 0% 0%;
 }
 
 .sidebar-bg {
@@ -87,6 +85,33 @@ color: white;
   color: white;
   font-weight:bold;
 }
+.banner-overlay{
+  background-color: rgba(0,206,209,0.5);
+  padding: 5% 15%;
+}
+
+.banner-overlay h1{
+  color: white;
+}
+
+.banner-overlay p{
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+}
+
+.banner .meta p{
+  font-size: 20px;
+  text-align: center;
+  padding: 5% 0%;
+}
 
 /*-------UNIVERSAL ELEMENTS---*/
 *{
@@ -98,7 +123,6 @@ color: white;
 a{
   text-decoration: none;
   }
-}
 
 [class~="col"], [class*="col-"], [class*="col_"] {
   padding:0;
@@ -116,17 +140,27 @@ font-size:22px;
 }
 
 ol, ul{
-  margin: 0 0 0 40px;
+  margin: 0 0 0 30px;
 }
+
+aside h2{
+  text-align: left;
+}
+
+aside.contrast-bg{
+  padding: 10px 20px;
+}
+
 
 /*-----MODULAR ELEMENTS---*/
 
 header{
-  Background-color: rgb(0,206,209);
+  Background-color: rgb(249,249,249);
 }
 
 header nav {
-text-align:center;
+text-align:right;
+color: white;
 }
 
 header nav a{
@@ -134,10 +168,14 @@ font-size: 16px;
 font-weight: bold;
 margin: 5px 5px;
 letter-spacing: 2.5px;
-color: rgb(249,249,249);
+color: rgb(0,206,209);
 text-decoration:none;
 padding:1rem;
 display: inline-block;
+}
+
+header nav a:hover{
+  border-bottom: 2px solid rgb(255,140,0);
 }
 
 section{
@@ -149,17 +187,19 @@ border-top-color:rgb(255,140,0);
 }
 
 footer{
+  background-color:
   padding:5% 0%;
   width:100%;
 }
 
 footer h2{
-background-color: rgb(249,249,249);
+color: rgb(255,140,0);
 }
 
 footer nav a{
   padding:5% 0% 0% 5%;
 }
+
 
 
 h1 {
@@ -197,9 +237,7 @@ p a{
   text-decoration:none;
 }
 
-a:hover {
-border-top-color:rgb(255,140,0);
-}
+
 
 .btn {
   display: inline-block;
@@ -216,10 +254,7 @@ span{
 
 }
 
-.banner {
-  background-position: center;
-  background-size: cover;
-}
+
 
 .testimonials{
   font-size:25px;
@@ -300,7 +335,7 @@ color:rgb(249,249,249);
 
 .quote{
   font-size:30px;
-  padding: 5% 5%;
+  padding: 5%% 0% 2% 0%;
 }
 
 /*---blog.html--*/
@@ -318,4 +353,5 @@ color:rgb(249,249,249);
 
 .figure{
    font-size: 60px;
+   line-height: 1;
  }

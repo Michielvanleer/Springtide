@@ -2,16 +2,31 @@
 layout: default
 ---
 <section class="grid banner" style="background-image:url(/images/{{ page.background-image }})">
+<div class="banner-overlay">
   <div class="col-12 header">
+    <p class= "col-3">
+      <img src="/images/{{ page.image }}"/>
+    </p>
     <h1 class="col-12 ">{{ page.title }}</h1>
-    <h2 class="col-12 ">{{ page.subtitle }}</h2>
+    <p class="col-12 ">{{ page.subtitle }}</p>
   </div>
-  <div class="col-12 banner-bg">
-    <p class= "col-12"><img src="/images/{{ page.image }}" /></p>
-    <p class ="col-12"><i class="fa fa-suitcase" aria-hidden="true"></i>  Client: {{ page.client }}</p>
-    <p class="col-12"><i class="fa fa-calendar" aria-hidden="true"></i> Date: {{ page.date | date_to_long_string }}</p>
-    <p class="col-12"><i class="fa fa-map-marker" aria-hidden="true"></i> Location: {{ page.location }}</p>
-    <p class="col-12"><i class="fa fa-industry" aria-hidden="true"></i> Sector: {{ page.sector }}</p>
+  <div class="grid col-12 meta">
+    <p class ="col-3">
+      <i class="fa fa-suitcase" aria-hidden="true"></i>
+      {{ page.client }}
+    </p>
+    <p class="col-3">
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      {{ page.date | date_to_long_string }}
+    </p>
+    <p class="col-3">
+      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      {{ page.location }}
+    </p>
+    <p class="col-3">
+      <i class="fa fa-industry" aria-hidden="true"></i>
+      {{ page.sector }}
+    </p>
   </div>
 </section>
 <div class="grid">
@@ -43,8 +58,8 @@ layout: default
     </section>
   </div>
 <aside class="col-3">
+  <h2>Testimonial</h2>
   <div class="contrast-bg">
-    <h2>Testimonial</h2>
     <p class="col-8"><img src="/images/{{ page.image-client }}"/></p>
     <p class="col-8"> {{ page.testimonial }} </p>
     <p class="col-8"> Name: {{ page.person }} </p>

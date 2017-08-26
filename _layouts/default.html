@@ -9,44 +9,38 @@
     <title>Springtide.com</title>
   </head>
   <body>
-    <header>
-      <div class="logo"><!--put logo in-->
+    <header class="grid">
+      <div class="col-3 logo"><!--put logo in-->
         <img src="" alt="">
       </div>
-      <nav class="navigation"><!--include dropdown in sectors and services-->
-        <a href="#About me">Bullshit about me</a>
-        <a href="#What I can do">What I can do</a>
-        <a href="#What I have done">Shit I have done</a>
-        <a href="#Sectors">Where my money is</a>
-        <a href="#My contribution">My contribution</a>
-        <a href="#Blog">Recent blog</a>
+      <nav class="col-9 navigation"><!--include dropdown in sectors and services-->
+        <a href="#Sectors">Sectors</a>
+        <a href="#My contribution">Thoughts</a>
+        <a href="#Blog">Blog</a>
         <a href="#Contact">Get in Touch</a>
       </nav>
     </header>
     {{ content }}
-    <footer id="contact" class="contact">
+    <footer id="contact" class="contact footer-bg">
       <h2>Get in touch</h2>
-        <div class="grid-center col-12 contact footer-bg">
-          <div class="">
-            <h3>Contact me</h3>
-            <form method="POST" action="http://formspree.io/michielvanleer@outlook.com"class="grid-center col-12 form">
+        <div class="grid contact footer-bg">
+          <div class="col-6 form">
+            <form method="POST" action="http://formspree.io/michielvanleer@outlook.com"class="grid-center col-12">
             <input type="text" name="name" placeholder="Your name" class="col-12">
             <input type="email" name="email" placeholder="Your email" class="col-12">
             <textarea name="message" placeholder="Your message" class="col-12"></textarea>
             <button type="submit">Send</button>
             </form>
           </div>
-          <div class= "col-6 footer-bg social media">
-            <h3>Find me on Social Media</h3>
-            <nav class="grid-spaceAround col-8 social media">
-              <a href="https://www.facebook.com/michiel.vanleer" class="col-3">
+            <nav class="grid-middle col-3 contrast-bg">
+              <a href="https://www.facebook.com/michiel.vanleer" class="col-2">
                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
               </a>
-              <a href="https://www.instagram.com/michielvanleer/" class="col-3"><i class="fa fa-instagram" aria-hidden="true"></i>
+              <a href="https://www.instagram.com/michielvanleer/" class="col-2"><i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="https://www.linkedin.com/in/michielvanleer/" class="col-3">
+              <a href="https://www.linkedin.com/in/michielvanleer/" class="col-2">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-              <a href="https://medium.com/@michielvanleer" class="col-3"><i class="fa fa-medium" aria-hidden="true"></i>
+              <a href="https://medium.com/@michielvanleer" class="col-2"><i class="fa fa-medium" aria-hidden="true"></i>
               </a>
           </nav>
         </div>
