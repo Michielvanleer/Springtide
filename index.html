@@ -9,13 +9,13 @@ layout: default
 <section id="about-me" class="aboutme dark-bg">
   <h2>About me</h2>
   <div class="grid-centre col-12">
-    <div class="col-5 Springtide">
+    <div class="col-6 Springtide">
       <h3>About Springtide</h3>
       <p>Springtide is your partner for all environmental matters with the purpose to reduce your environmental footprint.Read more
       </p>
       <a class="btn btn-dark" href="about me">about springtide</a>
     </div>
-  <div class="col-5 abouttxt">
+  <div class="col-6 abouttxt">
     <h3>About me</h3>
     <p>Hi, My name is Michiel van Leer and I am springtide. In 2017 I founded this business during my sabbatical, to be able share my experience and knowlegde with yourself, but also to generate income to kickstart the projects which you find in the <a href="my contribution">my contribution</a> section on this site.
     </p>
@@ -52,95 +52,106 @@ layout: default
     <a class= "btn btn-dark" href="#services">What I can do for your</a>
     </nav>
 </section>
-<section id=testimonials class="testimonials contrast-bg">
-  <div class="grid-middle col-12  testimonials-and-projects">
+<section id=testimonials class="testimonials">
+  <div class="grid-middle col-12  feat-bg">
     <div class= "col-3 image-testimonials">
-        <img src="" alt="">
+        <img src="/Images/client.jpg" alt="picture contact person">
     </div>
-    <div class="col-9 testimonials quote-bg">
-
-      {% for quote in site.projects %}
+    <div class="col-9 testimonials">
       <p>
-          {{ page.quote }}
+        We are impressed by his capabillity to adapt to our culture and understand the objectives of the project and his abillity to connect with all share-holders. Not only did we understand the risks better, we also implemented hands-on measures and get all the share-holders committing to the environmental objectives. We definetely will recommend springtide and Michiel as our prefered supplier in our prefered supplier list.
+    </p>
+      <p>
+        Name: Contact-person: Mr. P.ollution
       </p>
-      {% endfor %}
-
+      <p>
+        job-title: Offshore manager
+      </p>
+      <p>
+        Client: Shell Global
+      </p>
     </div>
   </div>
-  </section>
-  <section id="what-I-have-done" class="projects">
+</section>
+  <section id="what-I-have-done" class="projects dark-bg">
     <div class="projectheader">
       <h2>What I have done</h2>
-      <nav class="navigation-button">
-        <a class= "btn btn-dark" href>"next page"</a>
-        </nav>
-      </div>
-  <div class="grid col-12 project-overview">
+    </div>
+    <div class="grid col-12 project-overview">
       <div class="col-4 description">
-        <div class="col-4 description">
-          {% for project in site.projects %}
-            <h3> {{ project.company }} </h3>
+        <div class="col-4 project-thumbnail">
+          <div class="col-2 brand-image">
+            <div class="project-thumbnail-logo" style="background-image:url('/Images/shell-logo.png')">
+            </div>
+            <div class="col-4 description">
+              <h3>Shell Prelude</h3>
+              <p>
+                In depth analysis to understand the impact of the in field installation of Shell Prelude.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 description">
+        <div class="col-4 project-thumbnail">
+          <div class="col-2 brand-image">
+            <div class="col-4 description">
+              <h3>The Ocean Cleanup</h3>
+              <p>
+                Impact analysis for initial test of structure at Dogger-bank North Sea
+              </p>
+            </div>
+            <div class="project-thumbnail-logo" style="background-image:url('/Images/')">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 description">
+        <div class="col-4 project-thumbnail">
+          <div class="col-2 brand-image">
+            <div class="project-thumbnail-logo" style="background-image:url('/Images/inpex.logo.png')">
+            </div>
+            <div class="col-4 description">
+              <h3>Inpex Ichtys Project</h3>
+              <p>
+                Environmental audit Ichtus LNG Project
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    div class="col-4 description">
+      <div class="col-4 project-thumbnail">
+        <div class="col-2 brand-image">
+          <div class="col-4 description">
+            <h3>Tao Philipines</h3>
             <p>
-            {{ project.subtitle }}
+              Hand-on environmental training for 350 crew-members
             </p>
           </div>
-          <div class="col-4 project-txt">
-            <div class="col-4 brand-image">
-              {{ project.image }}
-            </div>
-          {% endfor %}
+          <div class="project-thumbnail-logo" style="background-image:url('/Images/')">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-4 project-txt">
-      <div class="col-4 brand-image">
-        <img src="" alt="">
-      </div>
-      <div class="col-4 description">
-        <h3>The Ocean Clean-up</h3>
-        <p>
-          Impact analysis for initial test of structure at Dogger-bank North Sea
-        </p>
-      </div>
-    </div>
-    <div class="col-4 project-txt">
-      <div class="col-4 description">
-        <h3>Inpex</h3>
-        <p>
-          Environmental audit Ichtus LNG Project
-        </p>
-      </div>
-      <div class="col-4 brand-image">
-        <img src="" alt="">
-      </div>
-    </div>
-    <div class="col-4 project-txt">
-      <div class="col-4 brand-image">
-        <img src="" alt="">
-      </div>
-      <div class="col-4 description">
-        <h3>Tao Philippines</h3>
-        <p>
-          Hands-on Practical Environmental awareness training for crew.
-        </p>
-      </div>
-    </div>
-    <div class="col-4 project navigation"
+    <div class="col-3 project navigation"
       <nav>
         <a class= "btn btn-dark" href="Projects">Projects</a>
       </nav>
     </div>
-  </div>
+</section>
 </section id="how i contribute" class="footprint">
 <h3 class= "contrast-bg">“We do not inherit the Earth from our ancestors, we borrow it from our children.” Waldo Emerson, 1990</h3>
 <h2>My contribution</h2>
 <div class="grid col-12 footprint">
   <div class= "col-4 image-emissions">
-      <img src="" alt=""><!--image of co2 calculator-->
+      <img src="/Images/nature.jpg" alt=""><!--image of co2 calculator-->
   </div>
   <div class="col-8 emission-description">
     <h4>My co2 emission compensation scheme</h4>
-    <p>co2 emission:300t</p>
-    <p>equivalent:100 trees</p>
+    <p></p><!--include the outcome of the co2 calculator-->
+    <p></p><!--include trees equivalent-->
     <p>As I am very aware about my co2 emission coming from my lifestyle and from running my business I yearly compensate my emission by planting trees via <span><a href="Carbonfund.org">Carbonfund</a></span>. a share of my incoming from springtide.com is invested in renewed.
       Springtide can help you with your c02 calculations. Contact me <span><a href="#contact">contact</a></span><!--link to contactform--> or have a look at the "my contributions" page.
     </p>

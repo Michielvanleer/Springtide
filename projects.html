@@ -1,9 +1,41 @@
 ---
 layout: default
 ---
-{% for project in site.projects %}
-
-<a href="{{ project.url }}">{{ project.title }} - {{ project.date }} - {{project.subtitle}} - {{project.sector}} - {{project.company}}
-</a>
-
-{% endfor %}
+<section class="grid banner" style="background-image:url('/images/background4.jpg')">
+  <div class="banner-overlay">
+    <h1> Recent projects</h1>
+  </div>
+</section>
+<section class="grid col-12">
+  <div class="col-4 project-bg">
+  {% for project in site.projects %}
+    <a href="{{ project.url }}">
+      <p class= "col-2">
+        <img src="/images/{{ project.image }}"/>
+      </p>
+      <div class=" grid col-5 project-title">
+        <h2 class=""> {{ project.title }} </h2>
+        <h3 class=""> {{ project.subtitle }} </h3>
+        <p class=""> {{project.quote}} </p>
+      </div>
+    <div class="grid col-5 meta-data">
+      <p class ="col-6">
+        <i class="fa fa-suitcase" aria-hidden="true"></i>
+        {{ project.client }}
+      </p>
+      <p class="col-6">
+      <i class="fa fa-industry" aria-hidden="true"></i>
+      {{ project.sector }}
+      <p class="col-6">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        {{ project.date | date_to_long_string }}
+      </p>
+      <p class="col-6">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        {{ project.location }}
+      </p>
+    </div>
+    </a>
+  {% endfor %}
+</div>
+</section>

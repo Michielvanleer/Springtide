@@ -272,10 +272,6 @@ span{
   padding: 2% 0%
 }
 
-.projects{
-Background-color: rgb(0,206,209);
-color:rgb(249,249,249);
-}
 
 .header-txt{
   Font-size:40px;
@@ -366,4 +362,19 @@ color:rgb(249,249,249);
 
 .blog-header{
   text-align: center;
+}
+
+/*---project-bg---*/
+.project-thumbnail {
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+.project-thumbnail-logo {
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.project-bg{
+  padding:0% 1% 0% 3%
 }
